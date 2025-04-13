@@ -386,13 +386,12 @@ FROM book
 ORDER BY price DESC
 LIMIT 5;
 
-
--- Retrieves the 5 most expensive books in the store
+-- Retrieves the 5 cheapest books in the store
 SELECT 
     title,
     price
 FROM book
-ORDER BY price DESC
+ORDER BY price ASC
 LIMIT 5;
 
 
