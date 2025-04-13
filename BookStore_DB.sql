@@ -197,8 +197,6 @@ VALUES (1, 1, CURDATE());
 
 
 INSERT INTO book_language (language_name) VALUES
-('English'),
-('French'),
 ('Spanish'),
 ('German'),
 ('Swahili');
@@ -376,15 +374,6 @@ FROM order_history oh
 JOIN order_status os ON oh.status_id = os.status_id
 WHERE oh.order_id = 1
 ORDER BY oh.change_date ASC;
-
-
--- Retrieves the 5 most expensive books in the store
-SELECT 
-    title,
-    price
-FROM book
-ORDER BY price DESC
-LIMIT 5;
 
 -- Retrieves the 5 cheapest books in the store
 SELECT 
